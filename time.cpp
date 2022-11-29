@@ -2,8 +2,7 @@
 Author: Frida Mesa
 Course: CSCI-135
 Instructor: Mike Zamansky
-Assignment: Lab 10 A
-Here, I wrote a program in which it implements two new functions
+Assignment: Lab 10 A,B,C,D,E
 */
 
 int main() 
