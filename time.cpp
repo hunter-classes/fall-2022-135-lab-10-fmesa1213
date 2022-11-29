@@ -60,11 +60,11 @@ TimeSlot evening = {movie2, {16, 45}};
 TimeSlot daytime2 = {movie3, {14, 10}};
 TimeSlot evening2 = {movie4, {20, 30}};
 
-printTimeSlot (morning);
-printTimeSlot (daytime);
-printTimeSlot (evening);
-printTimeSlot (daytime2);
-printTimeSlot (evening2);
+getTimeSlot (morning);
+getTimeSlot (daytime);
+getTimeSlot (evening);
+getTimeSlot (daytime2);
+getTimeSlot (evening2);
 
   
   
