@@ -5,23 +5,38 @@ Instructor: Mike Zamansky
 Assignment: Lab 10 A,B,C,D,E
 */
 
-int main() 
+//part A
+#include<iostream>
+using namespace std;
+struct Time
+
 {
-  //part A
-int h1, h2, m1, m2;
-cout << "Enter first time: ";
-cin >> h1 >> m1;
-cout << "Enter second time: ";
-cin >> h2 >> m2;
+int hour,min;
+};
 
-Time time1 = {h1, m1};
-Time time2 = {h2, m2};
+int minutesSinceMidnight(Time time)
+{
+return(time.hour*60+time.min);
+}
+int minutesUntil(Time earlier, Time later)
+{
+int h=later.hour-earlier.hour-1;
+int mm1=60-earlier.min;
+int mm2=later.min;
+return(h*60+mm1+mm2);
+}
 
-cout << "These moments of time are " << minutesSinceMidnight(time1) <<
-" and " << minutesSinceMidnight(time2) << " after midnight." << endl
-<< "The interval between them is " << minutesUntil(time1, time2) <<
-" minutes." << endl;
-  
+int main()
+{
+Time t1,t2;
+cout<<"Enter first time: ";
+cin>>t1.hour>>t1.min;
+cout<<"Enter second time: ";
+cin>>t2.hour>>t2.min;
+cout<<"These moments are "<<minutesSinceMidnight(t1)<<" and "<<minutesSinceMidnight(t2);
+cout<<" minutes after mid night"<<endl;
+cout<<"The interval between them is "<<minutesUntil(t1,t2)<<" minutes.";
+ 
   
   
   //part B:
